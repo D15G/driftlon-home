@@ -1,0 +1,30 @@
+.second {
+  position: absolute;
+  left: 50%;
+}
+
+.third {
+  position: absolute;
+  right: 2%;
+}
+
+.blog-card {
+  margin-top: 1%;
+  overflow-y: scroll;
+  max-heigth: 100%;
+}
+
+.blog-item {
+  word-wrap: break-word;
+  margin-bottom: 20px;
+}
+
+.blog-img {
+  max-width: 150px;
+  max-height: 150px;
+  display: inline-block;
+}
+
+.date {
+  display: block;
+}

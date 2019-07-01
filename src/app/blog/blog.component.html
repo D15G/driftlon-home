@@ -1,0 +1,20 @@
+<mat-toolbar>
+  <button mat-button>Info</button>
+  <button mat-button class="second">Video</button>
+  <button mat-button class="third" color="primary">Blogs</button>
+</mat-toolbar>
+
+<div class="wrapper">
+  <mat-card class="blog-card">
+    <h3>Driftlon-BLJ-Projekt</h3>
+
+    <div *ngFor="let post of blogList | async" class="blog-item">
+      <h4>{{post.titel}}</h4>
+      <img [src]="post.picture" class="blog-img">
+      <p>{{post.text}}<br></p>
+      <p class="date">Erfasst am: {{post.datum}}</p>
+    </div>
+  </mat-card>
+</div>
+
+
