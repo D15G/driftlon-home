@@ -1,7 +1,8 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {BlogComponent} from './blog/blog.component';
-import { InfoComponent } from './info/info.component';
+import {InfoComponent} from './info/info.component';
+import {VideoComponent} from './video/video.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,7 @@ const routes: Routes = [
   },
   {path: 'blog', component: BlogComponent},
   {path: 'info', component: InfoComponent},
+  {path: 'video', component: VideoComponent}
 ];
 
 @NgModule({

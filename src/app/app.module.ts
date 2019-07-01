@@ -11,6 +11,7 @@ import {AngularFirestoreModule} from '@angular/fire/firestore';
 import {AngularFireDatabaseModule} from '@angular/fire/database';
 import {AngularFireAuthModule} from '@angular/fire/auth';
 import { InfoComponent } from './info/info.component';
+import { VideoComponent } from './video/video.component';
 
 export const firebaseConfig = {
   apiKey: 'AIzaSyDDX6D0cNZV3TLLea-tj5igxOxr1Ev7htE',
@@ -27,6 +28,7 @@ export const firebaseConfig = {
     AppComponent,
     BlogComponent,
     InfoComponent,
+    VideoComponent,
   ],
   imports: [
     BrowserAnimationsModule,
