@@ -1,15 +1,17 @@
 <mat-toolbar>
   <button mat-button routerLink="/info">Info</button>
-  <button mat-button class="second">Video</button>
-  <button mat-button class="third" color="primary" routerLink="/blog">Blogs</button>
+  <button mat-button class="second" color="primary">Video</button>
+  <button mat-button class="third" routerLink="/blog">Blogs</button>
 </mat-toolbar>
-  
+
 <div class="wrapper">
   <mat-card class="example-card">
     <!-- video: class="vid" height="455" -->
-    <!-- bsp. --><iframe class="vid" height="455" src="https://www.youtube.com/embed/hHW1oY26kxQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- bsp. -->
+    <iframe class="vid" height="455" src="https://www.youtube.com/embed/hHW1oY26kxQ" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </mat-card>
-  
+
   <mat-grid-list class="grid-list" cols="3" rowHeight="3:1">
     <mat-grid-tile class="grid-tile">
       <div>

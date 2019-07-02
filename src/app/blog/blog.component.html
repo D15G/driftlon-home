@@ -10,7 +10,7 @@
 
     <div *ngFor="let post of blogList | async" class="blog-item">
       <h4>{{post.titel}}</h4>
-      <img [src]="post.picture" class="blog-img">
+      <img [src]="post.picture" class="blog-img" (click)="openDialog(post.picture)">
       <p>{{post.text}}<br></p>
       <p class="date">Erfasst am: {{post.datum}}</p>
     </div>
