@@ -18,7 +18,7 @@ export class BlogComponent implements OnInit {
   constructor(private afDb: AngularFireDatabase,
               public dialog: MatDialog) {
   }
-
+  
   ngOnInit() {
     this.blogListRef = this.afDb.list('blogs');
     this.blogList = this.blogListRef.valueChanges();
