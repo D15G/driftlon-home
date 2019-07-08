@@ -12,16 +12,18 @@ import {ImageDialogComponent} from '../image-dialog/image-dialog.component';
 })
 export class BlogComponent implements OnInit {
 
+  showSpinner: boolean = true;
   blogList: Observable<Upload[]>;
   blogListRef: AngularFireList<Upload>;
 
   constructor(private afDb: AngularFireDatabase,
               public dialog: MatDialog) {
   }
-  
+
   ngOnInit() {
     this.blogListRef = this.afDb.list('blogs');
     this.blogList = this.blogListRef.valueChanges();
+    this.blogList.subscribe(() => this.showSpinner = false);
   }
 
   openDialog(image): void {

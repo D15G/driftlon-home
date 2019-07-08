@@ -8,6 +8,8 @@
   <mat-card class="blog-card">
     <h3>Driftlon-BLJ-Projekt</h3>
 
+    <mat-spinner *ngIf="showSpinner" [diameter]="50"></mat-spinner>
+
     <div *ngFor="let post of blogList | async | reverse" class="blog-item">
       <h4>{{post.titel}}</h4>
       <img [src]="post.picture" class="blog-img" (click)="openDialog(post.picture)">
