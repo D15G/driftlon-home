@@ -13,6 +13,7 @@ import {AngularFireAuthModule} from '@angular/fire/auth';
 import {InfoComponent} from './info/info.component';
 import {VideoComponent} from './video/video.component';
 import {ImageDialogComponent} from './image-dialog/image-dialog.component';
+import { ReversePipe } from './reverse.pipe';
 
 export const firebaseConfig = {
   apiKey: 'AIzaSyDDX6D0cNZV3TLLea-tj5igxOxr1Ev7htE',
@@ -31,6 +32,7 @@ export const firebaseConfig = {
     InfoComponent,
     VideoComponent,
     ImageDialogComponent,
+    ReversePipe,
   ],
   imports: [
     BrowserAnimationsModule,

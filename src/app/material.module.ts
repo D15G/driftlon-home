@@ -7,18 +7,19 @@ import {
   MatDividerModule,
   MatExpansionModule,
   MatFormFieldModule,
+  MatGridListModule,
   MatIconModule,
   MatInputModule,
   MatListModule,
   MatMenuModule,
   MatNativeDateModule,
   MatPaginatorModule,
+  MatProgressSpinnerModule,
   MatSelectModule,
   MatSidenavModule,
   MatSortModule,
   MatTableModule,
-  MatToolbarModule,
-  MatGridListModule
+  MatToolbarModule
 } from '@angular/material';
 
 @NgModule({
@@ -39,6 +40,7 @@ import {
     MatFormFieldModule,
     MatInputModule,
     MatSortModule,
+    MatProgressSpinnerModule,
     MatSelectModule,
     MatNativeDateModule,
     MatExpansionModule,
@@ -59,6 +61,7 @@ import {
     MatDividerModule,
     MatTableModule,
     MatPaginatorModule,
+    MatProgressSpinnerModule,
     MatFormFieldModule,
     MatInputModule,
     MatSortModule,
