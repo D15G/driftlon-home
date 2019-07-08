@@ -1,4 +1,4 @@
-<mat-toolbar>
+<mat-toolbar class="menu-nav">
   <button mat-button routerLink="/info">Info</button>
   <button mat-button class="second" color="primary">Video</button>
   <button mat-button class="third" routerLink="/blog">Blogs</button>
@@ -6,9 +6,7 @@
 
 <div class="wrapper">
   <mat-card class="example-card">
-    <!-- video: class="vid" height="455" -->
-    <!-- bsp. -->
-      <iframe class="vid" height="455" src="https://www.twitch.tv/esl_csgo" frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe src="https://player.twitch.tv/?channel=driftlonblj" frameborder="0" allowfullscreen="true" scrolling="no"
+            height="450" width="750"></iframe>
   </mat-card>
 </div>
