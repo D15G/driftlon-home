@@ -5,10 +5,13 @@
 </mat-toolbar>
 
 <div class="wrapper">
-  <mat-card class="example-card">
-    <!-- video: class="vid" height="455" -->
-    <!-- bsp. -->
+  <mat-card class="countdown">
+    <h2>Wetterballon start in:</h2>
+    <countdown-timer [end]="'2019-07-10 09:00:00'"></countdown-timer>
+  </mat-card><br>
+
+  <mat-card class="stream">
     <iframe src="https://player.twitch.tv/?channel=driftlonblj" frameborder="0" allowfullscreen="true" scrolling="no"
-            height="450" width="750"></iframe>
+            height="450" width="100%"></iframe>
   </mat-card>
 </div>
