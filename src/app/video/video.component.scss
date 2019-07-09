@@ -6,7 +6,20 @@ mat-toolbar {
   justify-content: space-between;
 }
 
-.example-card {
+.countdown {
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgb(83, 83, 83);
+  color: white;
+  text-align: center;
+  font-size: 24px;
+}
+
+countdown-timer {
+  font-size: 64px;
+}
+
+.stream {
   max-width: 1000px;
   margin: 0 auto;
   background: rgb(83, 83, 83);
