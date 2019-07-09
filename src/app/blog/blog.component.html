@@ -12,7 +12,15 @@
 
     <div *ngFor="let post of blogList | async | reverse" class="blog-item">
       <h4>{{post.titel}}</h4>
-      <img [src]="post.picture" class="blog-img" (click)="openDialog(post.picture)">
+
+      <video width="400" controls *ngIf="checkType(post.picture); else elseBlock">
+        <source [src]="post.picture" type="video/mp4">
+      </video>
+
+      <ng-template #elseBlock>
+        <img [src]="post.picture" class="blog-img" (click)="openDialog(post.picture)">
+      </ng-template>
+
       <p>{{post.text}}<br></p>
       <p class="date">Erfasst am: {{post.datum}}</p>
     </div>

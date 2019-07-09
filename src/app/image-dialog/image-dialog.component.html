@@ -1,7 +1,7 @@
-<h1 mat-dialog-title>Bild anschauen</h1>
-<div mat-dialog-content>
+<div mat-dialog-content align="center">
   <img src="{{data.image}}" alt="blog-bild">
 </div>
-<div mat-dialog-actions>
-  <button mat-button cdkFocusInitial (click)="onCloseClick()">Schliessen</button>
+<div mat-dialog-actions style="margin-top: 10px;" align="center">
+  <button mat-button cdkFocusInitial (click)="onCloseClick()" style="max-width: 450px; width: 450px;">Schliessen
+  </button>
 </div>

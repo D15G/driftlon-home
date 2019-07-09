@@ -28,9 +28,13 @@ export class BlogComponent implements OnInit {
 
   openDialog(image): void {
     const dialogRef = this.dialog.open(ImageDialogComponent, {
-      width: '400px',
+      width: '700px',
       data: {image: image}
     });
+  }
+
+  checkType(url) {
+    return url.includes('video');
   }
 
 }
