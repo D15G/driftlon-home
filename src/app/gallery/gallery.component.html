@@ -7,6 +7,10 @@
 
 <div class="wrapper">
   <mat-card class="gallery-card">
-
+    <mat-grid-list cols="2" rowHeight="2:1">
+      <mat-grid-tile *ngFor="let post of images">
+        <img [src]="post" alt="image" (click)="openDialog(post)">
+      </mat-grid-tile>
+    </mat-grid-list>
   </mat-card>
 </div>
