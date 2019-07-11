@@ -17,6 +17,7 @@ import {ReversePipe} from './reverse.pipe';
 import {CountdownTimerModule} from 'ngx-countdown-timer';
 import {GalleryComponent} from './gallery/gallery.component';
 import {AngularFireStorageModule} from '@angular/fire/storage';
+import { ResultComponent } from './result/result.component';
 
 export const firebaseConfig = {
   apiKey: 'AIzaSyDDX6D0cNZV3TLLea-tj5igxOxr1Ev7htE',
@@ -37,6 +38,7 @@ export const firebaseConfig = {
     ImageDialogComponent,
     ReversePipe,
     GalleryComponent,
+    ResultComponent,
   ],
   imports: [
     BrowserAnimationsModule,

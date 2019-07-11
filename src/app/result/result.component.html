@@ -7,10 +7,11 @@
 </mat-toolbar>
 
 <div class="wrapper">
+  <p>Wir haben mit unseren Messdaten dieses 3D-Model-Video erstellen lassen. Hier kann man es anschauen: <a href="https://ayvri.com/scene/eyj8en02jg/cjxx8kgd800023h65wd88gpy9?utm_source=ayvri&utm_medium=direct&utm_campaign=play_button&utm_content=play-button&t=f2513bb0199dffa369e86168905e67fb0a39b0ac05c9f8273522050e870a7e45a4ae69439f95899e79ea1bf5e49cdfdd9123fcb627eb69c48f2f315b2b4b6425.341f6f8df1ca2436">Driftlon 3D</a></p>
   <mat-card class="gallery-card">
     <mat-grid-list cols="2" rowHeight="2:1">
       <mat-grid-tile *ngFor="let post of images">
-        <img [src]="post" alt="image" (click)="openDialog(post)">
+        <img [src]="post.image" alt="image"  (click)="openDialog(post.image)">
       </mat-grid-tile>
     </mat-grid-list>
   </mat-card>
