@@ -1,16 +1,14 @@
 <mat-toolbar class="menu-nav">
   <button mat-button routerLink="/info">Info</button>
   <button mat-button class="second" color="primary">Video</button>
-  <button mat-button class="second" routerLink="/gallery">Gallerie</button>
   <button mat-button class="third" routerLink="/blog">Blogs</button>
 </mat-toolbar>
 
 <div class="wrapper">
   <mat-card class="countdown">
-    <h2>Wetterballon start in:</h2>
-    <countdown-timer [end]="'2019-07-10 09:00:00'"></countdown-timer>
-  </mat-card>
-  <br>
+    <h2>Wetterballon startet in:</h2>
+    <countdown-timer [end]="'2019-07-10 09:45:00'"></countdown-timer>
+  </mat-card><br>
 
   <mat-card class="stream">
     <iframe src="https://player.twitch.tv/?channel=driftlonblj" frameborder="0" allowfullscreen="true" scrolling="no"
