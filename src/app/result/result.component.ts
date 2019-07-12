@@ -20,6 +20,8 @@ export class ResultComponent implements OnInit {
     {image: 'assets/result-image/datenlogger_auswertung_time_speed.png'},
     {image: 'assets/result-image/datenlogger_auswertung_time_temperature.png'},
     {image: 'assets/result-image/datenlogger_auswertung_time_voltage.png'},
+    {image: 'assets/result-image/datenlogger_auswertung_altitude_temperature.png'},
+    {image: 'assets/result-image/datenlogger_auswertung_altitude_speed.png'},
   ];
   
   constructor(private dialog: MatDialog) { }
