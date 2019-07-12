@@ -11,7 +11,7 @@ import {ImageDialogComponent} from '../image-dialog/image-dialog.component';
   styleUrls: ['./blog.component.scss']
 })
 export class BlogComponent implements OnInit {
-
+/*
   showSpinner: boolean = true;
   blogList: Observable<Upload[]>;
   blogListRef: AngularFireList<Upload>;
@@ -37,4 +37,22 @@ export class BlogComponent implements OnInit {
     return url.includes('video');
   }
 
+
+*/
+images = [
+  {image: '../assets/sonde.png'},
+  {image: 'assets/team.png'},
+ 
+];
+
+constructor(private dialog: MatDialog) { }
+
+ngOnInit() {}
+
+openDialog(image): void {
+  const dialogRef = this.dialog.open(ImageDialogComponent, {
+    width: '1200px',
+    data: {image: image}
+  });
+}
 }

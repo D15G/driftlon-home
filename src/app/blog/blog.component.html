@@ -7,6 +7,21 @@
 </mat-toolbar>
 
 <div class="wrapper">
+    <p>Wegen Firebase mussten wir unseren Blog weg nehmen von der webseite, da wir unsere bandbreite überschritten haben</p>
+  <h2>Artikel für ICT BZ</h2>
+<p>
+  Für das jetzige 4. Semester ist das Basislehrjahr fast vorbei. Damit wir auch einen guten Abschluss feiern können, haben wir die Aufgabe bekommen, einen Wetterballon Flug zu machen. Anfangs waren wir mit der Planung beschäftigt, denn so einen Flug muss man gut durchplanen. Als alles geplant war und wir das ganze Material bekommen haben, konnten wir mit dem Bauen anfangen. Das Material bestand aus: Zwei Arduinos, einem Datenlogger, GPS-Tracker, GoPro und einem Raspberry mit mini Kamera. All diese Komponenten mussten wir konfigurieren. Eigentlich wurden alle Komponenten gut konfiguriert, jedoch gab es beim Testen von der Datenübertragung viele Fehlschläge. Das Problem lag an der Reichweite, obwohl die Übertragung auf freiem Feld über 1.8 Km gehen müsste, ging sie nur 100m. Schlussendlich haben wir die Liveübertragung gestrichen. Als wir alles konfiguriert hatten, bauten wir alle Komponenten in die Sonde ein. Am 10. Juli starteten wir den Wetterballon in Bözen (Aargau). Wir haben einen wundervollen Tag erwischt, da das Wetter super war. Als wir den Ballon gestartet haben, fuhren wir ihm hinterher. Der Ballon war etwa 2 Stunden in der Luft und er platzte in 30500m Höhe, schlussendlich landete er in Meggen. Zum Glück landete der Ballon an einem optimalen Ort, gleich an der Hauptstrasse neben einer Gärtnerei. Als wir wieder im Büro ankamen und die Videoaufnahmen gesehen haben, konnten wir mit guten Gedanken dieses Projekt beenden. Wir Lernende können sagen, dass das Projekt sehr spannend war. Für jeden, der dieses Projekt nachmachen möchte: TUT DIES! 
+</p>
+<mat-card class="gallery-card">
+    <mat-grid-list cols="2" rowHeight="2:1">
+      <mat-grid-tile *ngFor="let post of images">
+        <img [src]="post.image" alt="image"  (click)="openDialog(post.image)">
+      </mat-grid-tile>
+    </mat-grid-list>
+  </mat-card>
+
+  
+  <!--
   <mat-card class="blog-card">
     <h3>Driftlon-BLJ-Projekt</h3>
 
@@ -26,7 +41,7 @@
       <p>{{post.text}}<br></p>
       <p class="date">Erfasst am: {{post.datum}}</p>
     </div>
-  </mat-card>
+  </mat-card>-->
 </div>
 
 

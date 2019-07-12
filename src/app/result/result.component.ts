@@ -12,14 +12,14 @@ import {MatDialog} from '@angular/material';
 
 export class ResultComponent implements OnInit {
    images = [
-    {image: '../../assets/result-image/2019-07-11_09-30-32.png'},
-    {image: '../../assets/result-image/datenlogger_auswertung_time_altitude.png'},
-    {image: '../../assets/result-image/datenlogger_auswertung_time_climb_rate.png'},
-    {image: '../../assets/result-image/datenlogger_auswertung_time_humidity.png'},
-    {image: '../../assets/result-image/datenlogger_auswertung_time_pressure.png'},
-    {image: '../../assets/result-image/datenlogger_auswertung_time_speed.png'},
-    {image: '../../assets/result-image/datenlogger_auswertung_time_temperature.png'},
-    {image: '../../assets/result-image/datenlogger_auswertung_time_voltage.png'},
+    {image: 'assets/result-image/2019-07-11_09-30-32.png'},
+    {image: 'assets/result-image/datenlogger_auswertung_time_altitude.png'},
+    {image: 'assets/result-image/datenlogger_auswertung_time_climb_rate.png'},
+    {image: 'assets/result-image/datenlogger_auswertung_time_humidity.png'},
+    {image: 'assets/result-image/datenlogger_auswertung_time_pressure.png'},
+    {image: 'assets/result-image/datenlogger_auswertung_time_speed.png'},
+    {image: 'assets/result-image/datenlogger_auswertung_time_temperature.png'},
+    {image: 'assets/result-image/datenlogger_auswertung_time_voltage.png'},
   ];
   
   constructor(private dialog: MatDialog) { }
